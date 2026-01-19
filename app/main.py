@@ -6,7 +6,7 @@ from decimal import Decimal
 from app.database import fetch_all_productos, fetch_producto_by_id, insert_producto, update_producto, delete_producto
 
 app = FastAPI(
-    title="FerreApp API",
+    title="FerreApp API by Rebeca",
     version="1.0.0",
     description="API REST desacoplada para gestión de productos de ferretería"
 )
@@ -111,11 +111,6 @@ def map_rows_to_productos(rows: List[dict]) -> List[ProductoDB]:
 # ========================
 # Endpoints
 # ========================
-
-@app.get("/ping")
-def ping():
-    """Endpoint de prueba."""
-    return {"message": "pong"}
 
 
 @app.get("/productos", response_model=List[Producto])
@@ -291,3 +286,8 @@ def eliminar_producto(producto_id: int):
         "mensaje": "Producto eliminado exitosamente",
         "id_producto": producto_id
     }
+
+@app.get("/")
+def ping():
+    """Endpoint de prueba."""
+    return {"message": "pong"}
