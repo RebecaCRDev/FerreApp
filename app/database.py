@@ -12,7 +12,7 @@ def get_connection():
         host=os.getenv("DB_HOST", "localhost"),        # <— corregidos nombres
         user=os.getenv("DB_USER", "root"),
         password=os.getenv("DB_PASSWORD", ""),
-        database=os.getenv("DB_NAME", "ferreapp"),
+        database=os.getenv("DB_NAME", "FerreApp"),
         port=int(os.getenv("DB_PORT", "3306")),
         charset="utf8mb4"
     )
