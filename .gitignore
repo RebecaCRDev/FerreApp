@@ -1,0 +1,74 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+.virtualenv/
+
+# =========================
+# IDEs / Editores
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs y temporales
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# Dependencias
+# =========================
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# =========================
+# Configuración sensible
+# =========================
+.env
+.env.*
+config.py
+settings.py
+
+# =========================
+# Base de datos
+# =========================
+*.sqlite3
+*.db
+
+# Dumps de base de datos (NO versionar datos reales)
+*.sql
+!schema.sql
+!seed.sql
+
+# =========================
+# Tests / Coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Build / Distribución
+# =========================
+build/
+dist/
